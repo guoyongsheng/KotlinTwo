@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity(), MainAdapter.OnItemClickListener {
         adapter.addAllItems(getDataSource())
 
 
+
         doAsync {
             val gson = Gson()
             val value = URL("http://www.izaodao.com/Api/AppFiftyToneGraph/videoLink/?once_nos=true").readText()
